@@ -1,0 +1,49 @@
+<view class="wrapper">
+<!-- <view class="ul" wx:for="{{dataList}}"> -->
+<view class="ul" >
+<!-- <view class="li">
+<label class="label">上报人：</label>
+<view class="name">{{dataList.creater}}</view>
+</view>
+<view class="li">
+<label class="label">上报时间：</label>
+<view class="name">{{dataList.createDate}}</view>
+</view>  -->
+<view class="li">
+<label class="label">考点名称：</label>
+<view class="name">{{dataList.examPlaceName}}</view>
+<view class="name"></view>
+</view>
+<view class="li" style='border-bottom:1px solid #ccc'>
+<label class="label">场次:</label>
+<view class="label">开考情况</view>
+<view class="label">结束情况</view>
+</view>
+<view class="li">
+<label class="label">报名总人数:</label>
+<view class="name">{{dataList.examineeSum}}</view>
+<view class="name">{{dataList.examineeSum}}</view>
+</view>
+<view class="li">
+<label class="label">科目一:</label>
+<view class="name">{{dataList.missSum1}}</view>
+<view class="name">{{dataList.missSum1}}</view>
+</view>
+<view class="li">
+<label class="label">科目二:</label>
+<view class="name">{{dataList.missSum2}}</view>
+<view class="name">{{dataList.missSum2}}</view>
+</view>
+<view class="li">
+<label class="label">科目三:</label>
+<view class="name">{{dataList.missSum3}}</view>
+<view class="name">{{dataList.missSum2}}</view>
+</view>
+<view class="li">
+<label class="label">科目四:</label>
+<view class="name">{{dataList.missSum4}}</view>
+<view class="name">{{dataList.missSum2}}</view>
+</view>
+
+</view> 
+</view>

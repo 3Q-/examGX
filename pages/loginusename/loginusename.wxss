@@ -1,0 +1,26 @@
+.container{
+  width:100%;
+}
+._center{
+  text-align: center;
+  font-size: 40rpx;
+}
+._text{
+  width:80%;
+}
+._textindent{
+  text-indent: 24px;
+}
+._button{
+  width:75%;
+  height:100rpx;
+  margin-top:50rpx;
+  color:#FFF;
+  background:#008bec;
+}
+.wrapper{
+  position:relative;
+  text-align: center;
+  padding:20rpx 0;
+  width:100%;
+}

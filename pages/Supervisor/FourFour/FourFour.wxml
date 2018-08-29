@@ -1,0 +1,28 @@
+<view class="wrapper">
+<view class="ul" wx:for="{{dataList}}">
+<view class="li">
+<label class="label">上报类型：</label>
+<view class="name">{{item.emergencyLevel}}</view>
+</view>
+<view class="li">
+<label class="label">上报等级：</label>
+<view class="name">{{item.emergencyType}}</view>
+</view>
+<view class="li">
+<label class="label">上报描述：</label>
+<view class="name">{{item.situationDesc}}</view>
+</view>
+<view class="li">
+<label class="label">考点名称：</label>
+<view class="name">{{item.nodeName}}</view>
+</view>
+<view class="li">
+<label class="label">修改用户：</label>
+<view class="name">{{item.reportUser}}</view>
+</view>
+<view class="li">
+<image style="width:200rpx;height:300rpx"  wx:for="{{item.photoPath}}" wx:for-item="items" 
+src="https://www.examos.cn/bigdata/{{items}}" data-src="https://www.examos.cn/bigdata/{{items}}"  bindtap="previewImage"></image>
+</view>
+</view>
+</view>

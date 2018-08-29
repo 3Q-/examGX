@@ -1,0 +1,39 @@
+<view class="container">
+    <view class="content">
+        <view class="tab">
+            <view class="tab1">考试项目:</view>
+            <view class="tab2">{{examName}}</view>
+        </view>
+        <view class="tab">
+            <view class="tab1">展示项目:</view>
+            <view class="tab2">{{showname}}</view>
+        </view>
+        <view class="tab">
+            <view class="tab1">考点选择:</view>
+            <picker class="tab2 sel" bindchange="bindPickerChange" value="{{index}}" range="{{_array}}">
+                <view class="picker">
+                {{_array[index]}}
+                </view>
+            </picker>
+        </view>
+        <!--  -->
+        <!-- <view class="tabArr" wx:for="{{sinArr}}">
+            <view class="tabGroup">{{item.GroupName}}:</view>
+            <view class="tabName">{{item.name}}</view>
+            <view class="tabRemark">{{item.remark}}</view>
+            <view class="tabPhone">{{item.phone}}</view>
+        </view> -->
+        <view class="tabArr" wx:for="{{sinArr}}">
+                <tr>
+                        <td class="tabGroup">{{item.GroupName}}:</td>
+                        <td class="tabName">{{item.name}}</td>
+                        <td class="tabRemark">{{item.remark}}</td>
+                        <td class="tabPhone">{{item.phone}}</td>
+                </tr>   
+        </view>
+        <!--  -->
+    </view>
+    <view class="btn">
+        <button  class="btn1" size="mini" bindtap="reback2" hover-class="btnhover"> 返回 </button>
+    </view>     
+</view>

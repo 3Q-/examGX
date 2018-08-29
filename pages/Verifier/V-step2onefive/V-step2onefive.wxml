@@ -1,0 +1,34 @@
+<view class="container">
+    <view class="content">
+        <view class="tab">
+            <view class="tab1">考试项目:</view>
+            <view class="tab2">{{examName}}</view>
+        </view>
+        <view class="tab">
+            <view class="tab1">展示项目:</view>
+            <view class="tab2">{{showname}}</view>
+        </view>
+        <view class="tab">
+            <view class="tab1">考点选择:</view>
+            <picker class="tab2 sel" bindchange="bindPickerChange" value="{{index}}" range="{{_array}}">
+                <view class="picker">
+                {{_array[index]}}
+                </view>
+            </picker>
+        </view>
+        <view class="pdf" bindtap='download'>
+            <image style="width:100rpx;height:100rpx;" src="img/u394.jpg"></image>
+            <view class="pdftext">点击下载并打开</view>
+        </view>
+        <!--  -->
+        <view class='copy' >
+            <view class="copyOne">由于安卓微信端暂不支持PDF文件</view>
+            <view class="">请点击下方按钮在其他浏览器中打开</view>
+            <button class='copyBtn' size="mini" bindtap='copy' hover-class="copyBtnHover">复制</button>
+        </view>
+        <!--  -->
+    </view>
+    <view class="btn">
+        <button  class="btn1" size="mini" bindtap="reback2" hover-class="btnhover"> 返回 </button>
+    </view>     
+</view>

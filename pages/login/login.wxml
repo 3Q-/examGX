@@ -1,0 +1,20 @@
+<!--login.wxml form表单头Step1方法-->
+<view class="container">
+  <form bindsubmit="toStep1" style="width:100%" report-submit="true">
+    <view class="wrapper">
+      <image class="img" src="./img/username.png"></image>
+      <input name="linkManVo.phone" class="input" type="number" placeholder="请输入用户名"/>
+    </view>
+  <view class="wrapper">
+    <image class="img" src="./img/password.png"></image>
+    <input name="linkManVo.password" class="input" type="number" password="false" placeholder="请输入密码"/>
+  </view>
+  <button formType="submit" style="width:75%;height:100rpx;margin-top:50rpx;color:#FFF;background:#008bec">登录</button>
+  </form>
+  <view class="issue1" bindtap="tologinusename">
+    <a>不知道自己的用户名与密码？</a>
+  </view>
+    <view class="issue2" bindtap="tologinusename">
+    <a>无法登录？</a>
+  </view>
+</view>

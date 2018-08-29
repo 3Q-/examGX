@@ -1,0 +1,57 @@
+/* pages/Verifier/V-step2onefive/V-step2onefive.wxss *//* pages/Verifier/V-step2onetwo/V-step2onetwo.wxss */
+.container{
+    padding:0;
+}
+.content{
+}
+.tab{
+    clear: both;
+    height:60rpx;
+}
+.tab1{
+    width:30%;
+    float: left;
+    text-align: center;
+}
+.tab2{
+    width:70%;
+    float:left;
+}
+.btn{
+    width:100%;
+    margin-top: 20rpx;
+    text-align: center;
+}
+.btn1{
+    width:80%;
+}
+.btnhover{
+    background:gray;
+}
+.sel{
+    width:50% ;
+    border:1rpx solid gray;
+    position: relative;
+    height: 35rpx;
+}
+.sel ::after{
+    display:inline-block;
+    position: absolute;
+    top:8rpx;
+    right:10rpx;
+    /* width:20rpx;
+    height:20rpx; */
+    border-top: 20rpx solid gray;
+    border-bottom: 0;
+    border-left:10rpx solid #fff;
+    border-right:10rpx solid #fff;
+    background: red;
+    content:"";
+}
+.pdf{
+    text-align: center;
+    padding:30rpx;
+}
+.btncolor{
+    background: #c9c9c9;
+}

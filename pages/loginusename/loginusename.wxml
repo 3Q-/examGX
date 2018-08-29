@@ -1,0 +1,14 @@
+<view class="container">
+  <view  class="_text  _center wrapper">
+    <text>提示信息</text>
+  </view>
+  <view class="_text  _textindent">
+    <text >该客户端仅在考试项目期间使用，如不知道如何登录，或遇到无法登录等情况，请联系技术负责人吴玉维13812345678.</text>
+    </view>
+    <view class="_text  _textindent">
+    <text >谢谢!</text>
+    </view>
+  <view class="wrapper">
+  <button class="_button" bindtap="tologin">关闭</button>
+  </view>
+</view>

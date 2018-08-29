@@ -1,0 +1,107 @@
+<!--step2.wxml-->
+<import src="../Template/Template.wxml"/> 
+<view class="container">
+<view class="step2-container" style="padding:0;margin-bottom:50px;">
+<!-- 一 -->
+<view class="func-part" style="margin:0;border-top: 1px solid #f3f3f4;">
+<view class="func-title">考前工作上报</view>
+<view class="ul clearfix">
+<view class="li" hover-class="gray" bindtap="toOneOnePage">
+<image class="icon" src="../../img2/wjsb.png"></image>
+<text class="func-name">考前工作上报</text>
+</view>
+<view class="li" hover-class="gray" bindtap="toOneTwoPage">
+<image class="icon" src="../../img2/wjcx.png"></image>
+<text class="func-name">考务工作会</text>
+</view> 
+</view>
+</view>
+
+<!-- 二 -->
+<view class="func-part" >
+<view class="func-title">考试当天工作阶段</view>
+<view class="ul clearfix">
+<view class="li" hover-class="gray" bindtap="toTwoOnePage">
+<image class="icon" src="../../img2/kaozheng.png"></image>
+<text class="func-name">准备工作上报</text>
+</view>
+<view class="li" hover-class="gray" bindtap="toZKZqPage">
+<image class="icon" src="../../img2/kaozheng.png"></image>
+<text class="func-name">准考证查询</text>
+</view>
+<view class="li" hover-class="gray" bindtap="toTwoThreePage">
+<image class="icon" src="../../img2/renxiang.png"></image>
+<text class="func-name">人脸核查登记</text>
+</view>
+<view class="li" hover-class="gray" bindtap="toTwoFourPage">
+<image class="icon" src="../../img2/kaozheng.png"></image>
+<text class="func-name">开考情况上报</text>
+</view>
+<view class="li" hover-class="gray" bindtap="toQKfPage">
+<image class="icon" src="../../img2/kaozheng.png"></image>
+<text class="func-name">缺考上报</text>
+</view>
+<view class="li" hover-class="gray" bindtap="toWJfPage">
+<image class="icon" src="../../img2/kaozheng.png"></image>
+<text class="func-name">违纪上报</text>
+</view>
+<view class="li" hover-class="gray" bindtap="toQKqPage">
+<image class="icon" src="../../img2/kaozheng.png"></image>
+<text class="func-name">缺考查询</text>
+</view>
+<view class="li" hover-class="gray" bindtap="toWJqPage">
+<image class="icon" src="../../img2/kaozheng.png"></image>
+<text class="func-name">违纪查询</text>
+</view>
+<view class="li" hover-class="gray" bindtap="toYCfPage">
+<image class="icon" src="../../img2/kaozheng.png"></image>
+<text class="func-name">场次结束上报</text>
+</view>
+</view>
+</view>
+
+<!-- 三 -->
+<view class="func-part" >
+<view class="func-title">考试结束收尾阶段</view>
+<view class="ul clearfix">
+<view class="li" hover-class="gray" bindtap="toThreeOnePage">
+<image class="icon" src="../../img2/jjgl.png"></image>
+<text class="func-name">收尾工作上报</text>
+</view>
+<view class="li" hover-class="gray" bindtap="toThreeTwoPage">
+<image class="icon" src="../../img2/jjcx.png"></image>
+<text class="func-name">考试情况查询</text>
+</view>
+</view>
+</view>
+
+<!-- 四 -->
+<view class="func-part" >
+<view class="func-title">其他功能</view>
+<view class="ul clearfix">
+<view class="li" hover-class="gray" bindtap="toQDqPage">
+<image class="icon" src="../../img2/zhuxiao.png"></image>
+<text class="func-name">签到查询</text>
+</view>
+<view class="li" hover-class="gray" bindtap="toFourThreePage">
+<image class="icon" src="../../img2/qdcx.png"></image>
+<text class="func-name">紧急上报</text>
+</view>
+<view class="li" hover-class="gray" bindtap="toFourFourPage">
+<image class="icon" src="../../img2/zhuxiao.png"></image>
+<text class="func-name">上报查询</text>
+</view>
+<view class="li" hover-class="gray" bindtap="zhuxiao">
+<image class="icon" src="../../img2/zhuxiao.png"></image>
+<text class="func-name">注销</text>
+</view>
+<view class="li" hover-class="gray" bindtap="zhuxiao">
+<image class="icon" src="../../img2/zhuxiao.png"></image>
+<text class="func-name">登录</text>
+</view>
+</view>
+</view>
+<template is="tabBar" data="{{tabBar:bindData.tabBar}}"/>
+</view>
+</view>
+

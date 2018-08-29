@@ -1,0 +1,59 @@
+<view class="container">
+    <view class="content">
+        <view class="tab">
+            <view class="tab1">考试项目:</view>
+            <view class="tab2">{{examName}}</view>
+        </view>
+        <view class="tab">
+            <view class="tab1">展示项目:</view>
+            <view class="tab2">{{showname}}</view>
+        </view>
+        <view class="tab">
+            <view class="tab1">考点选择:</view>
+            <picker class="tab2 sel" bindchange="bindPickerChange" value="{{index}}" range="{{_array}}">
+                <view class="picker">
+                {{_array[index]}}
+                </view>
+            </picker>
+        </view>
+        <!--  -->
+        <!-- <view class="tab">
+            <view class="tab1">考点数量:</view>
+            <view class="tab2">{{examPlaceTotal}}</view>
+        </view> -->
+        <!--  -->
+        <view class="tab">
+            <view class="tab1">考场数量:</view>
+            <view class="tab2">{{examRoomTotal}} 个</view>
+        </view>
+        <!--  -->
+        <view class="tab">
+            <view class="tab1">考点督考:</view>
+            <view class="tab2">{{superviseManTotal}} 人</view>
+        </view>
+        <!--  -->
+        <view class="tab">
+            <view class="tab1">考点主考:</view>
+            <view class="tab2">{{mainManTotal}} 人</view>
+        </view>
+        <!--  -->
+        <view class="tab">
+            <view class="tab1">监考老师:</view>
+            <view class="tab2">{{teacherTotal}} 人</view>
+        </view>
+        <!--  -->
+        <view class="tab">
+            <view class="tab1">技术人员:</view>
+            <view class="tab2">{{artisanTotal}} 人</view>
+        </view>
+        <!--  -->
+        <view class="tab">
+            <view class="tab1">其他人员:</view>
+            <view class="tab2">{{otherManTotal}} 人</view>
+        </view>
+        <!--  -->
+    </view>
+    <view class="btn">
+        <button  class="btn1" size="mini" bindtap="reback2" hover-class="btnhover"> 返回 </button>
+    </view>     
+</view>

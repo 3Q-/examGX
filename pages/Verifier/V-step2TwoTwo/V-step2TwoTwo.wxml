@@ -1,0 +1,33 @@
+<view class="container">
+    <view class="content">
+        <view class="tab">
+            <view class="tab1">考试项目:</view>
+            <view class="tab2">{{examName}}</view>
+        </view>
+        <view class="tab">
+            <view class="tab1">展示项目:</view>
+            <view class="tab2">{{showname}}</view>
+        </view>
+        <view class="tab">
+            <view class="tab1">考点选择:</view>
+            <picker class="tab2 sel" bindchange="bindPickerChange" value="{{index}}" range="{{_array}}">
+                <view class="picker">
+                {{_array[index]}}
+                </view>
+            </picker>
+        </view>
+        <!--  -->
+        <view class="tab">
+            <view class="tab1">会议准备情况:</view>
+            <view class="tab2">{{reportType}}</view>
+        </view>
+        <!--  -->
+        <view class="img_1" >
+            <image bindtap='imgYu' wx:for="{{_array2}}" wx:for-item="item" src="https://www.examos.cn/bigdata/{{item}}" data-src="https://www.examos.cn/bigdata/{{item}}" data-list="{{_array2}}" class="img_2" ></image>
+        </view>
+      <!--  -->
+    </view>
+    <view class="btn">
+        <button  class="btn1" size="mini" bindtap="reback2" hover-class="btnhover"> 返回 </button>
+    </view>     
+</view>

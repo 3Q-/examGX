@@ -1,0 +1,42 @@
+<view class="container">
+    <view class="content">
+        <view class="tab">
+            <view class="tab1">考试项目:</view>
+            <view class="tab2">{{examName}}</view>
+        </view>
+        <!--  -->
+        <view class="tab">
+            <view class="tab1">展示项目:</view>
+            <view class="tab2">{{showname}}</view>
+        </view>
+        <!--  -->
+        <view class="tab">
+            <view class="tab1">报名人数:</view>
+            <view class="tab2">{{count}} 人</view>
+        </view>
+        <!--  -->
+        <view class="tab">
+            <view class="tab1">参考人数:</view>
+            <view class="tab2">{{total}} 人</view>
+        </view>
+        <!--  -->
+        <view class="tab">
+            <view class="tab1">缺考人数:</view>
+            <view class="tab2">{{missTest}} 人</view>
+        </view>
+        <!--  -->
+        <view class="tab">
+            <view class="tab1">通过率:</view>
+            <view class="tab2">{{passPer}}</view>
+        </view>
+        <!--  -->
+        <view class="tab">
+            <view class="tab1">缺考率:</view>
+            <view class="tab2">{{missPer}}</view>
+        </view>
+        <!--  -->
+    </view>
+    <view class="btn">
+        <button  class="btn1 btncolor" size="mini" bindtap="reback2" hover-class="btnhover"> 返回 </button>
+    </view>     
+</view>

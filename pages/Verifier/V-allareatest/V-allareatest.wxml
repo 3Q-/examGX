@@ -1,0 +1,70 @@
+<!--pages/Verifier/V-allareatest/V-allareatest.wxml-->
+<!-- <text>pages/Verifier/V-allareatest/V-allareatest.wxml</text> -->
+<view class="container">
+    <view class='content'>
+        <view class=" cell testname">
+            <view class="tab">考试项目:
+            </view>
+            <view class="tab1">{{examName}}
+            </view>
+        </view>
+        <view class="cell showname">
+            <view class="tab">展示项目:
+            </view>
+            <view class="tab1">{{showName}}
+            </view> 
+        </view>
+        <view class="cell testareanum">
+            <view class="tab">总考区数:
+            </view>
+            <view class="tab1">{{examAreaTotal}} 个
+            </view> 
+        </view>
+        <view class="cell testplacenum">
+            <view class="tab">总考点数:
+            </view>
+            <view class="tab1">{{examPlaceTotal}} 个
+            </view>
+        </view>
+        <view class="cell totalplacenum">
+            <view class="tab">总考场数:
+            </view>
+            <view class="tab1">{{ examRoomTotal}} 个
+            </view>
+        </view>
+        <view class="cell testplacecheck">
+            <view class="tab">考点督考:
+            </view> 
+            <view class="tab1">{{superviseManTotal}} 人
+            </view>
+        </view>
+        <view class="cell testplacecheck1">
+            <view class="tab">考点主考:
+            </view>
+            <view class="tab1">{{mainManTotal}} 人
+            </view>
+        </view>
+        <view class="cell checkteacher">
+            <view class="tab">监考老师:
+            </view>
+            <view class="tab1">{{teacherTotal}} 人
+            </view> 
+        </view>
+        <view class="cell jisuman">
+            <view class="tab">技术人员:
+            </view>
+            <view class="tab1">{{ artisanTotal}} 人
+            </view>
+        </view>
+        <view class="cell qitaman">
+            <view class="tab">其他人员:
+            </view>
+            <view class="tab1">{{otherManTotal}} 人
+            </view>
+        </view>
+    </view>
+    <view class="btn1">
+        <button  class="btn"  size="mini"
+        bindtap="tostep2" hover-class="btnhover">返回</button>
+    </view>
+</view>

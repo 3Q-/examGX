@@ -1,0 +1,88 @@
+<!--BMdetail.wxml-->
+<view class="wapper">
+<view class="list clearfix">
+<image class="photo" src="{{dataList.photoPath}}"></image>
+<view class="tr" style="border-top: 1px dashed #ccc;">
+<label class="label">姓名：</label>
+<view class="name">{{dataList.examineeName}}</view>
+</view>
+<view class="tr">
+<label class="label">身份证号：</label>
+<view class="name">{{dataList.identity}}</view>
+</view>
+<view class="tr">
+<label class="label">准考证号：</label>
+<view class="name">{{dataList.licence}}</view>
+</view>
+<view class="tr">
+<label class="label">考点名称：</label>
+<view class="name">{{dataList.examPlaceName}}</view>
+</view>
+<view class="tr">
+<label class="label">考场号：</label>
+<view class="name">{{dataList.examRoom}}</view>
+</view>
+<view class="tr">
+<label class="label">座位号：</label>
+<view class="name">{{dataList.seatNumber}}</view>
+</view>
+<!-- <form bindsubmit="formSubmit" bindreset="formReset"> -->
+<!-- <view class="tr1">
+ <label class="label1">上报类型：</label>
+   <picker class="input" bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view class="picker">
+      {{array[index]}}
+    </view>
+  </picker>
+ <!-- <input name="examExceptionVo.exceptionName" class="input" placeholder=""/> -->
+<!-- </view>  -->
+<!-- <view class="tr1">
+ <label class="label1">完成情况:</label>
+   <picker class="input" bindchange="bindPickerChange1" value="{{index1}}" range="{{array1}}">
+    <view class="picker">
+      {{array1[index1]}}
+    </view>
+  </picker>
+ <!-- <input name="examExceptionVo.exceptionName" class="input" placeholder=""/> -->
+<!-- </view> -->
+<!-- 照片 -->
+
+
+  <!-- <view class="page-body">
+  <view class="tr1">
+  <label class="label1">上传现场照片:</label>
+  </view>
+  <view class="clearfix">
+      <view class="page-section">
+        <view class="weui-cells">
+          <view class="weui-cell">
+            <view class="weui-cell__bd">
+              <view class="weui-uploader">
+                <view class="weui-uploader__bd">
+                  <view class="weui-uploader__files">
+                    <block wx:for="{{imageList}}" wx:for-item="image">
+                      <view class="weui-uploader__file">
+                        <image class="weui-uploader__img"  data-index="{{index}}" src="{{image}}" data-src="{{image}}" bindtap="previewImage"></image>
+                      </view>
+                    </block>
+                  </view>
+                  <view class="weui-uploader__input-box">
+                    <view class="weui-uploader__input" bindtap="chooseImage"></view>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+        </view>
+
+      </view>
+  </view> -->
+
+   <!-- <view class="btarea">
+     <button formType="submit" class="bt" type="primary">提交</button>
+    <button formType="reset" class="bt">重置</button>
+ </view> -->
+ <!-- </form> -->
+</view>
+</view>

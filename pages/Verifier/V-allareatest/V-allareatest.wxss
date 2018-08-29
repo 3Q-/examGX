@@ -1,0 +1,39 @@
+/* pages/Verifier/V-allareatest/V-allareatest.wxss */
+.container{
+    padding:0;
+}
+.content{
+    width:100%;
+}
+.testname{
+}
+.cell{
+    width:100%;
+    clear:both;
+}
+.tab{
+    float: left;
+    width:30%;
+    height:60rpx;
+    text-align: center;
+}
+view{
+     overflow-wrap: break-word;
+}
+.tab1{
+    float: left;
+    width:65%;
+}
+.btn1{
+    width:100%;
+    text-align: center;
+}
+.btn{
+    width:80%;
+    margin: 40rpx 0  0;
+    background: #c9c9c9;
+
+}
+.btnhover{
+    background: gray;
+}

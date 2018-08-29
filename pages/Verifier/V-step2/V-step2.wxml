@@ -1,0 +1,68 @@
+<!--step2.wxml-->
+<import src="../Template/Template.wxml"/> 
+<view class="step2-container">
+<!-- 一 -->
+<view class="func-part" style="margin:0;border-top: 1px solid #f3f3f4;">
+<view class="func-title">考试概况</view>
+<view class="ul clearfix">
+<view class="li" hover-class="gray" bindtap="toallareatest">
+<image class="icon" src="../../img2/wjsb.png"></image>
+<text class="func-name">全区考试概况</text>
+</view>
+<view class="li" hover-class="gray" bindtap="toOneTwoPage">
+<image class="icon" src="../../img2/wjcx.png"></image>
+<text class="func-name">各地市考试概况</text>
+</view>
+<view class="li" hover-class="gray" bindtap="toOneThreePage">
+<image class="icon" src="../../img2/wjcx.png"></image>
+<text class="func-name">各考点考试概况</text>
+</view>
+<view class="li" hover-class="gray" bindtap="toOneFourPage">
+<image class="icon" src="../../img2/wjcx.png"></image>
+<text class="func-name">各考点组织架构</text>
+</view>
+<view class="li" hover-class="gray" bindtap="toOneFivePage">
+<image class="icon" src="../../img2/wjcx.png"></image>
+<text class="func-name">各考点考场平面图</text>
+</view>
+</view>
+</view>
+
+<!-- 二 -->
+<view class="func-part" >
+<view class="func-title">考务工作</view>
+<view class="ul clearfix">
+<view class="li" hover-class="gray" bindtap="toTwoOnePage">
+<image class="icon" src="../../img2/renxiang.png"></image>
+<text class="func-name">全区人脸通道概况</text>
+</view>
+ <view class="li" hover-class="gray" bindtap="toTwoTwoPage">
+<image class="icon" src="../../img2/kaozheng.png"></image>
+<text class="func-name">各考点考务会议情况</text>
+</view> 
+</view>
+</view>
+<!-- 四 -->
+<view class="func-part" >
+<view class="func-title">其他功能</view>
+<view class="ul clearfix">
+<view class="li" hover-class="gray" bindtap="toThreeOnePage">
+<image class="icon" src="../../img2/zhuxiao.png"></image>
+<text class="func-name">签到</text>
+</view>
+<view class="li" hover-class="gray" bindtap="toThreeTwoPage">
+<image class="icon" src="../../img2/qdcx.png"></image>
+<text class="func-name">签到查询</text>
+</view>
+<view class="li" hover-class="gray" bindtap="zhuxiao">
+<image class="icon" src="../../img2/zhuxiao.png"></image>
+<text class="func-name">注销</text>
+</view>
+<view class="li" hover-class="gray" bindtap="zhuxiao">
+<image class="icon" src="../../img2/zhuxiao.png"></image>
+<text class="func-name">登录</text>
+</view>
+</view>
+</view>
+<template is="tabBar" data="{{tabBar:bindData.tabBar}}"/>
+</view>
