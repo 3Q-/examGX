@@ -1,6 +1,6 @@
 <!--BMlist.wxml-->
 <view class="wapper">
-<view class="list clearfix" wx:for="{{dataList}}" data-zkz="{{item.licence}}" bindtap="toDetail">
+<view class="list clearfix" wx:for="{{dataList}}" wx:key="*this" data-zkz="{{item.licence}}" bindtap="toDetail">
 <image class="photo" src="{{item.photoPath}}"></image>
 <view class="info-wapper">
 <view class="tr">

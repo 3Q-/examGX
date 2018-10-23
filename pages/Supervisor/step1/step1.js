@@ -386,13 +386,13 @@ SJZajax:function(){
     this.getLocation();
   },
   toMore:function(){
-    if (!canUseNow) {
-      util.canUse();
-    } else {
-    wx.switchTab({
+    console.log('更多');
+    wx.navigateTo({
       url: '../step2/step2'
     })
-  }
+    // wx.switchTab({
+    //   url: '../step2/step2'
+    // })
   },
   //回复和详情的ajax,给后台传消息已读状态。
   repAjax:function(data){

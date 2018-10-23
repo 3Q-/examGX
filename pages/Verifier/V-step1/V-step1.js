@@ -7,6 +7,7 @@ var bmap = require('../../../utils/bmap-wx.js');
 var app = getApp();
 var weburl = app.globalData.weburl;
 var canUseNow = app.globalData.canUseNow;
+var examName = app.globalData.examName;
 Page({
   onPullDownRefresh: function () {
     console.log("刷新")
@@ -65,8 +66,8 @@ Page({
       this.setData({
         username: username,
         role: role,
-        lastTime: lastTime,
-        position: position,
+        lastTime: lastTime || '',
+        position: position || '',
         placeid: placeid,
         placename: placename
       })

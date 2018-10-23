@@ -12,7 +12,7 @@
 <image bindtap="selectAll" wx:if="{{!isSelState&&quanXian}}" src="../../img3/allMsg.svg" class="allMsg"></image>
 </view>
 
-<view class="group" wx:for="{{groupList}}">
+<view class="group" wx:for="{{groupList}}" wx:key="*this">
 
 <view class="groupName" catchtap="groSelEvent" data-groupindex="{{index}}">
 <view class="icon" wx:if="{{isSelState}}">

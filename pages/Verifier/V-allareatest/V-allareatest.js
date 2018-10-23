@@ -1,6 +1,7 @@
 // pages/Verifier/V-allareatest/V-allareatest.js
 var app=getApp();
 var weburl = app.globalData.weburl;
+var examName = app.globalData.examName;
 Page({
   /**
    * 页面的初始数据
@@ -37,7 +38,7 @@ Page({
               var data =res.data.dataMain;
               if(res !=undefined){
                   that.setData({
-                      examName: data.examName == null ? 0 : data.examName,
+                    examName: data.examName ? data.examName: examName,
                       artisanTotal: data.artisanTotal == null ? 0 : data.artisanTotal,
                       examAreaTotal: data.examAreaTotal == null ? 0 : data.examAreaTotal,
                       examPlaceTotal: data.examPlaceTotal == null ? 0 : data.examPlaceTotal,

@@ -61,7 +61,7 @@
 </view>
 </view>
 
-<view class="dothings" wx:for="{{timeList}}">
+<view class="dothings" wx:for="{{timeList}}" wx:key="*this">
 <view class="thinghead clearfix">
 <view class="img">
 <image src="../../img/timepoint.svg" style="width:50rpx;height:50rpx;"></image>
